@@ -1,0 +1,141 @@
+main {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Roboto;
+}
+
+aside,
+form {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: -4px;
+  padding-right: 30px;
+  vertical-align: top;
+  width: 50%;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  color: #CB1C20;
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+  margin: 12px 0;
+}
+
+.notification {
+  background: #F1F1F1;
+  border: 1px solid #E1E1E1;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #999999;
+  display: none;
+  font-size: normal;
+  font-weight: bold;
+  margin-top: 16px;
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.warning {
+  color: #CB1C20;
+  font-size: 12px;
+}
+
+input,
+label {
+  display: block;
+  font-size: 18px;
+  margin-top: 16px;
+}
+
+input {
+  border: 2px solid #DEDEDE;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: Roboto;
+  padding: 5px 8px;
+  width: 100%;
+}
+
+button {
+  background: #CB1C20;
+  background: -webkit-linear-gradient(left top, #DB5861, #E62F40);
+  background: -o-linear-gradient(left top, #DB5861, #E62F40);
+  background: -moz-linear-gradient(left top, #DB5861, #E62F40);
+  background: linear-gradient(to left top, #DB5861, #E62F40);
+  border: 1px solid #984D4E;
+  border-radius: 3px;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 16px;
+  outline: none;
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+button span {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+a {
+  color: #CB1C20;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ol {
+  counter-reset: i;
+  list-style: none;
+  margin-left: 2em;
+  text-indent: -3em;
+  padding: 0;
+}
+
+li {
+  font-size: 14px;
+  padding-left: 1em;
+}
+
+li:before {
+  background-color: #ECECEC;
+  border-radius: 32px;
+  content: counter(i);
+  counter-increment: i;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  height: 32px;
+  line-height: 32px;
+  margin-right: 1em;
+  text-align: center;
+  text-indent: 0;
+  width: 32px;
+}
+
+li + li {
+  margin-top: 24px;
+}
