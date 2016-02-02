@@ -4,6 +4,13 @@
     <meta charset="utf-8">
     <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script>
+    window.onload = function() {
+      if (window.location.hash.substr(1) === 'error-register') {
+        document.getElementById('registration-error').style.display = 'block';
+      }
+    };
+    </script>
   </head>
   <body>
     <main>
@@ -12,12 +19,13 @@
       <form action="http://z24.legalthings.io/site/register" method="POST">
         <p class="warning">U heeft een account nodig om te starten met uw aanvraag</p>
         <label>Voer uw e-mailadres in</label>
-        <input name="emailAddress" placeholder="E-mail" type="text">
+        <input name="RegistrationForm[email]" placeholder="E-mail" type="text">
         <label>Kies uw wachtwoord</label>
-        <input name="password" placeholder="Wachtwoord" type="password">
+        <input name="RegistrationForm[password]" placeholder="Wachtwoord" type="password">
         <label>Voor- en achternaam</label>
-        <input name="name" placeholder="Voor- en achternaam" type="text">
+        <input name="RegistrationForm[name]" placeholder="Voor- en achternaam" type="text">
         <button type="submit">Aanmelden <span>&#10095;</span></button>
+        <h4 class="error" id="registration-error">Het registreren is mislukt, probeer het opnieuw!</h4>
         <p>Heeft u al een account? <a href="login.html">Klik hier om in te loggen</a>.</p>
       </form>
       <aside>
