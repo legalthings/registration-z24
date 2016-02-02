@@ -4,16 +4,24 @@
     <meta charset="utf-8">
     <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script>
+    window.onload = function() {
+      if (window.location.hash.substr(1) === 'error-login') {
+        document.getElementById('login-error').style.display = 'block';
+      }
+    };
+    </script>
   </head>
   <body>
     <main>
       <h1>Inloggen</h1>
       <form action="http://z24.legalthings.io/site/register" method="POST">
         <label>Voer uw e-mailadres in</label>
-        <input name="emailAddress" placeholder="E-mail" type="text">
+        <input name="LoginForm[email]" placeholder="E-mail" type="text">
         <label>Voer uw wachtwoord in</label>
-        <input name="password" placeholder="Wachtwoord" type="password">
+        <input name="LoginForm[password]" placeholder="Wachtwoord" type="password">
         <button type="submit">Inloggen <span>&#10095;</span></button>
+        <h4 class="error" id="login-error">Het inloggen is mislukt, probeer het opnieuw!</h4>
         <p>Bent u uw wachtwoord vergeten? <a href="reset-password.html">Klik hier om een nieuwe aan te vragen</a>.</p>
         <p>Hebt u nog geen account? <a href="register.html">Klik hier om er één aan te maken</a>.</p>
       </form>
