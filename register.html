@@ -8,6 +8,8 @@
     window.onload = function() {
       if (window.location.hash.substr(1) === 'error-register') {
         document.getElementById('registration-error').style.display = 'block';
+      } else if (window.location.hash.substr(1) === 'error-email') {
+        document.getElementById('email-error').style.display = 'block';
       }
     };
     </script>
@@ -26,6 +28,7 @@
         <input name="RegistrationForm[name]" placeholder="Voor- en achternaam" type="text">
         <button type="submit">Aanmelden <span>&#10095;</span></button>
         <h4 class="error" id="registration-error">Het registreren is mislukt, probeer het opnieuw!</h4>
+        <h4 class="error" id="email-error">Het e-mailadres is ongeldig of reeds in gebruik!</h4>
         <p>Heeft u al een account? <a href="login.html">Klik hier om in te loggen</a>.</p>
       </form>
       <aside>
