@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
     <script>
     window.onload = function() {
@@ -18,7 +18,7 @@
     <main>
       <h1>Bedrijf oprichten? Maak een account aan</h1>
       <h2>Ontvang binnen 10 minuten een gratis conceptakte</h2>
-      <form action="http://z24.legalthings.io/site/register" method="POST">
+      <form action="https://z24.legalthings.io/site/register" method="POST" target="_blank">
         <p class="warning">U heeft een account nodig om te starten met uw aanvraag</p>
         <label>Voer uw e-mailadres in</label>
         <input name="RegistrationForm[email]" placeholder="E-mail" type="text">
@@ -26,7 +26,8 @@
         <input name="RegistrationForm[password]" placeholder="Wachtwoord" type="password">
         <label>Voor- en achternaam</label>
         <input name="RegistrationForm[name]" placeholder="Voor- en achternaam" type="text">
-        <button type="submit">Aanmelden <span>&#10095;</span></button>
+        <!--<button type="submit">Aanmelden <span>&#10095;</span></button>-->
+        <button formtarget="_blank" type="submit">Aanmelden <span>&#10095;</span></button>
         <h4 class="error" id="registration-error">Het registreren is mislukt, probeer het opnieuw!</h4>
         <h4 class="error" id="email-error">Het e-mailadres is ongeldig of reeds in gebruik!</h4>
         <p>Heeft u al een account? <a href="login.html">Klik hier om in te loggen</a>.</p>
